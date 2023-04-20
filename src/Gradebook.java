@@ -6,6 +6,21 @@ public class Gradebook {
 	 * ***/
 	private String courseName;
 
+	
+	/**
+	 * 
+	 */
+	public Gradebook() {
+		super();
+	}
+
+	/**
+	 * @param courseName
+	 */
+	public Gradebook(String courseName) {
+		this.courseName = courseName;
+	}
+
 	/**
 	 * @return the courseName
 	 */
@@ -21,7 +36,8 @@ public class Gradebook {
 	}
 
 	public void displayMessage() {
-		System.out.println("Bienvenido a la planilla de notas " + getCourseName());
+		System.out.println("Bienvenido a la planilla de notas de la UCaldas " + getCourseName());
+		System.out.println("Imprimir el # de estudiantes");
 	}
 
 }

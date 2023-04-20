@@ -6,23 +6,17 @@ public class GradebookTest {
 		
 		Scanner nombreCurso = new Scanner(System.in);
 			
-		Gradebook planillaNotas = new Gradebook();
+		Gradebook planillaNotasPoo = new Gradebook("Programacion Orientada a Objetos");
+		Gradebook planillaNotasEstructuras = new Gradebook("Estructuras de datos");
 		
-		//System.out.println("El nombre del curso (antes de la asignacion) es : /n" + planillaNotas.getCourseName());
-		
-		System.out.println("Por favor ingrese el nombre del curso /n: ");	
-		String nombreEntradaCurso = nombreCurso.nextLine();
-		planillaNotas.setCourseName(nombreEntradaCurso);
-		
-		System.out.println("El nuevo nombre del curso es : " + planillaNotas.getCourseName());
-		
-		
-		//planillaNotas.displayMessage();
+		planillaNotasPoo.displayMessage();
+		planillaNotasEstructuras.displayMessage();
 		
 		
 		
 		
-		planillaNotas.displayMessage();
+		
+		
 	}
 
 }
