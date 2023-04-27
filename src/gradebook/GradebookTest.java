@@ -1,3 +1,4 @@
+package gradebook;
 import java.util.Scanner;
 
 public class GradebookTest {
