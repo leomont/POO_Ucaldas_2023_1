@@ -27,6 +27,15 @@ public class AccountTest {
 		System.out.printf("Saldo %.2f\n ",account1.getBalance() );
 		
 		
+		System.out.println("Ingrese Valor a consignar para cuenta 2: ");
+		depositAmount = input.nextDouble();
+		account2.credit(depositAmount);
+		System.out.println("el saldo actual en la cuenta 2");
+		System.out.println(account2.getBalance());
+		System.out.printf("Saldo %.2f\n ",account2.getBalance() );
+		
+		
+		
 		//System.out.println("Ingrese Valor a consignar para cuenta 2: ");
 		//depositAmount = input.nextDouble();
 		
