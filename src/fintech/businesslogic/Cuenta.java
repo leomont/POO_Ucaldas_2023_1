@@ -1,6 +1,6 @@
-package fintech;
+package fintech.businesslogic;
 
-public class Cuenta {
+public class Cuenta implements operacionesCuenta{
 
 
 	private double saldo;
@@ -42,6 +42,27 @@ public class Cuenta {
 	public Cuenta() {
 		
 		// TODO Auto-generated constructor stub
+	}
+
+
+	@Override
+	public void consigar(double saldo) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public void retirar(double saldo) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public void verSaldo(String celular) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
