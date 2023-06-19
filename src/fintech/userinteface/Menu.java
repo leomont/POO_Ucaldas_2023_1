@@ -74,14 +74,14 @@ public class Menu extends JFrame {
 					.addContainerGap(37, Short.MAX_VALUE))
 		);
 		
-		JButton btnNewButton = new JButton("Add Usuario");
+		JButton btnNewButton = new JButton("Agreario Usuario");
 		btnNewButton.setForeground(Color.BLACK);
 		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 16));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				Student studentDetails = new Student();
-				studentDetails.show();
+				Persona detallesPersona = new Persona();
+				detallesPersona.show();
 				dispose();
 				
 			}
@@ -104,7 +104,7 @@ public class Menu extends JFrame {
 		btnNewButton_1.setBounds(32, 113, 287, 52);
 		desktopPane.add(btnNewButton_1);
 		
-		JButton btnNewButton_2 = new JButton("View Students");
+		JButton btnNewButton_2 = new JButton("Visualizar clientes");
 		btnNewButton_2.setForeground(Color.BLACK);
 		btnNewButton_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -119,7 +119,7 @@ public class Menu extends JFrame {
 		btnNewButton_2.setBounds(32, 195, 287, 52);
 		desktopPane.add(btnNewButton_2);
 		
-		JButton btnNewButton_3 = new JButton("Update Existing Student");
+		JButton btnNewButton_3 = new JButton("Actualizar Estudiante");
 		btnNewButton_3.setForeground(Color.BLACK);
 		btnNewButton_3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -134,7 +134,7 @@ public class Menu extends JFrame {
 		btnNewButton_3.setBounds(32, 272, 287, 52);
 		desktopPane.add(btnNewButton_3);
 		
-		JButton btnNewButton_4 = new JButton("Logout");
+		JButton btnNewButton_4 = new JButton("Salir");
 		btnNewButton_4.setForeground(Color.BLACK);
 		btnNewButton_4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -149,9 +149,9 @@ public class Menu extends JFrame {
 		btnNewButton_4.setBounds(32, 348, 287, 47);
 		desktopPane.add(btnNewButton_4);
 		
-		JLabel lblNewLabel = new JLabel("Bienvenido a la App Fintech");
+		JLabel lblNewLabel = new JLabel("App Fintech");
 		lblNewLabel.setForeground(Color.BLACK);
-		lblNewLabel.setBounds(20, 17, 402, 27);
+		lblNewLabel.setBounds(141, 6, 155, 27);
 		desktopPane_1.add(lblNewLabel);
 		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 22));
 		contentPane.setLayout(gl_contentPane);

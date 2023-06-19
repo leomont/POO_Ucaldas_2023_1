@@ -1,6 +1,6 @@
 package fintech.businesslogic;
 
-public class Persona {
+public abstract class Persona {
 	
 	private String cedula;
 	private String nombre;
@@ -10,6 +10,26 @@ public class Persona {
 	private String celular;
 	private String contrasena;
 	
+
+	/**
+	 * @param cedula
+	 * @param nombre
+	 * @param apellido
+	 * @param email
+	 * @param direccionCorrespondencia
+	 * @param contrasena
+	 */
+	public Persona(String cedula, String nombre, String apellido, String email, String direccionCorrespondencia,
+			String contrasena) {
+		super();
+		this.cedula = cedula;
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.email = email;
+		this.direccionCorrespondencia = direccionCorrespondencia;
+		this.contrasena = contrasena;
+	}
+
 
 	/**
 	 * @param cedula
@@ -170,9 +190,10 @@ public class Persona {
 	 * Description: Agregar un nuevo usuario
 	 * TODO: especificar el tipo de retorno, atributos de entrada
 	 */
-	public void registrarUsuario() {
+	public abstract void registrarUsuario(String cedula, String nombre, String apellido, String email, String direccionCorrespondencia,
+			String contrasena);
 		
-	}
+	
 	
 	/*
 	 * Description: enviar la contrasena almacenada

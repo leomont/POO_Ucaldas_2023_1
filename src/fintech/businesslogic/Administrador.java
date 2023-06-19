@@ -11,4 +11,11 @@ public class Administrador extends Persona{
 		return "";
 	}
 
+	@Override
+	public void registrarUsuario(String cedula, String nombre, String apellido, String email, String direccionCorrespondencia,
+			String contrasena) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
